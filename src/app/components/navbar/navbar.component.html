@@ -1,1 +1,34 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-2" [routerLink]="['/']"
+      ><img
+        src="https://png2.cleanpng.com/sh/f15610485b8c001729e8eb358bc50f83/L0KzQYm3V8AzN5poepH0aYP2gLBuTf5mfJdxgeo2dHXvdcfwkBlwdl54gNHCLYP3grbojflvb15yfdZyYT3peb30Tf5mfJdxgeo2bHBqf368gsNiOGQ3e6M6MUCzRnAAWcM2PmYAUaMAM0C4Qom8VcYxPmoARuJ3Zx==/kisspng-netflix-television-show-streaming-media-film-netflix-logo-5b3a032c111006.7935659915305285560699.png"
+        alt=""
+        width="80px"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item me-2">
+          <a
+            class="nav-link active bg-danger rounded px-4 text-light"
+            [routerLink]="['/login']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

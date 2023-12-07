@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="bg-dark">
+  <a class="ms-5" [routerLink]="['/']"
+    ><i id="back" class="bi bi-arrow-left-square fs-3"></i
+  ></a>
+</div>
+<div id="loginContainer" class="bg-dark" style="height: 840px">
+  <div class="text-light">
+    <h3 class="text-center">Login</h3>
+
+    <form class="d-flex justify-content-center">
+      <table>
+        <tr height="60px">
+          <td><b>User:</b></td>
+          <td><input type="text" name="username" maxlength="8" /></td>
+        </tr>
+        <tr height="60px">
+          <td><b>Psw:</b></td>
+          <td><input type="password" name="password" maxlength="8" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit" class="btn btn-success w-100">Login</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
